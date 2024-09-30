@@ -1,0 +1,11 @@
+useContext:
+If you have fetched the data in App.jsx and want to send the data fetched directly to other components without using props then we use this
+
+steps:
+1) first import {useContext,createContext} from 'react'
+
+2)create a context 
+const CollectionContext = createContext();
+
+2)create a custom hook to use the context you created
+const useCollection = () => useContext(CollectionContext);

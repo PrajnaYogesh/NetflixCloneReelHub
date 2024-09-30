@@ -1,0 +1,75 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    backdrop-filter: blur(5px); /* Blurring effect for background */
+    z-index: 1000; /* Ensure modal is above other content */
+  }
+  
+  .modal-content {
+    background: rgb(244, 243, 243);
+    border-radius: 8px;
+    width: 40vw; /* 50% of viewport width */
+    max-height: 80vh; /* Max height */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-image {
+    width: 100%; /* Full width of the modal */
+    height: 40%; /* Set image height to 40% */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  }
+  
+  .modal-title {
+    font-size: 1.3em; /* Slightly smaller font size */
+    margin: 5px 15px; /* Margin for spacing */
+    color: #333; /* Dark text color for visibility */
+  }
+  
+ 
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 5px; /* Margin for spacing */
+   
+    width: 200px;
+    margin-bottom: 5px;
+  }
+  
+  .modal-buttons button {
+    padding: 8px 2px; /* Smaller padding for buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    flex: 1; /* Make buttons fill space equally */
+    margin: 0 5px; /* Space between buttons */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
+  .modal-buttons button:hover {
+    background-color: #8d060b; /* Darker blue on hover */
+  }
+  
+  .modal-overview {
+    padding: 0px 15px; /* Padding for content */
+    font-size: 0.9em; /* Keep font size readable */
+    color: #000; /* Black color for better readability */
+    overflow: auto; /* Allow scrolling if content is too large */
+    max-height: 20%; /* Limit height of the overview section */
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  

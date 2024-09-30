@@ -1,0 +1,62 @@
+.eachOuterContainer{
+    /* border: 2px solid rgb(66, 232, 232); */
+  margin: 35px 0px;
+}
+
+.topicStyle{
+font-weight: 600;
+font-size: 1.4rem;
+
+/* border: 2px solid rgb(221, 10, 45) ; */
+padding: 0;
+   margin-bottom: 15px;
+}
+
+.boxContainer{
+    /* border: 2px solid rgb(8, 220, 68); */
+  height: 34vh;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  /* row-gap: 35px; */
+  gap: 40px;
+}
+
+.boxC{
+    height: 100%;
+    position: relative; 
+    
+}
+
+.box{
+    /* border: 1px solid rgb(197, 230, 11); */
+    width: 220px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.box:hover {
+  transform: scale(1.05); /* Slightly scales the box up */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect for depth */
+}
+
+.removeButton {
+  position: absolute; /* Positioning over the image */
+  top: 10px; /* Adjust as necessary */
+  right: 10px; /* Adjust as necessary */
+  background-color: rgba(255, 0, 0, 0.9); /* Darker red with less transparency */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px; /* Add some padding for better size */
+  font-weight: bold; /* Make the text bold */
+  z-index: 10; /* Ensure the button is above other elements */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.removeButton:hover {
+  background-color: rgba(200, 0, 0, 0.9); /* Darker red on hover */
+}
