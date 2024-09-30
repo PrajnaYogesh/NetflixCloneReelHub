@@ -32,9 +32,9 @@ const API_KEY = import.meta.env.VITE_API_KEY
         const response = await fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&year=2024&api_key=${API_KEY}`);
         // const response = await fetch(`https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1&sort_by=popularity.asc&api_key=${API_KEY}`);
                 const data = await response.json();
-                // console.log("Fetched data:", data); // Log the entire data structure
+                // console.log("Fetched data:", data); 
                 const info = data.results.slice(0, 2);
-                // console.log("info is:", info); // Log the sliced info
+                // console.log("info is:", info);
               
         setMainImage(info);
          
@@ -168,7 +168,7 @@ useEffect(()=>{
             mainImage.length > 0 ? (
               <BottomContainer posterPath={mainImage}  upcomingMovie={upcomingMovie} nowPlaying={nowPlaying} popular={popular}/>
             ) : (
-              <div>Loading...</div> // Show loading while data is being fetched
+              <div>Loading...</div> 
             )
           } 
         />

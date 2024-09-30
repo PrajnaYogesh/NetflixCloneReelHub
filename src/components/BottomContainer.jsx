@@ -9,10 +9,7 @@ function BottomContainer({posterPath,upcomingMovie,nowPlaying,popular}) {
 <EachCategory topic={`Upcoming`} rowList={upcomingMovie} />
 <EachCategory topic={`Now Playing`} rowList={nowPlaying} />
 <EachCategory topic={`What's Popular`} rowList={popular} />
-{/* 
-<EachCategory rowList={rowList} />
-<EachCategory rowList={popularCategory} />
-<EachCategory rowList={popularCategory} /> */}
+
     </div>
   )
 }

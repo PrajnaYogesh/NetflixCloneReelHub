@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.css'
-import { AiOutlineDown } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
 import { IoMdNotifications } from "react-icons/io";
 import { Link } from 'react-router-dom'

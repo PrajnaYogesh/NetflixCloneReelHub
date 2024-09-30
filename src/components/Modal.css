@@ -42,34 +42,34 @@
   .modal-buttons {
     display: flex;
     justify-content: space-around;
-    margin: 0px 5px; /* Margin for spacing */
+    margin: 0px 5px; 
    
     width: 200px;
     margin-bottom: 5px;
   }
   
   .modal-buttons button {
-    padding: 8px 2px; /* Smaller padding for buttons */
+    padding: 8px 2px; 
     border: none;
     border-radius: 5px;
     background-color: #e50914;
     color: white;
     cursor: pointer;
-    flex: 1; /* Make buttons fill space equally */
-    margin: 0 5px; /* Space between buttons */
-    font-size: 0.9em; /* Slightly smaller font size */
+    flex: 1; 
+    margin: 0 5px; 
+    font-size: 0.9em; 
   }
   
   .modal-buttons button:hover {
-    background-color: #8d060b; /* Darker blue on hover */
+    background-color: #8d060b; 
   }
   
   .modal-overview {
-    padding: 0px 15px; /* Padding for content */
-    font-size: 0.9em; /* Keep font size readable */
-    color: #000; /* Black color for better readability */
-    overflow: auto; /* Allow scrolling if content is too large */
-    max-height: 20%; /* Limit height of the overview section */
-    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 0px 15px; 
+    font-size: 0.9em; 
+    color: #000; 
+    overflow: auto; 
+    max-height: 20%; 
+    background-color: #f9f9f9; 
   }
   

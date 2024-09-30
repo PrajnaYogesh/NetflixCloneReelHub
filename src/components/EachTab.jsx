@@ -1,7 +1,7 @@
 import React from 'react'
 import MainImage from './MainImage'
 import Collection from './Collection'
-import { useCollection } from '../App'; // Import the custom hook
+import { useCollection } from '../App'; 
 
 function EachTab({type}) {
 

@@ -40,7 +40,7 @@ const closeModal = ()=>{
             )}
 </div>
 ))}
-           {/*map over the below image to make boxes */}
+           
            <Modal isOpen={modalOpen} onClose={closeModal} movie={selectedMovie} />
        </div>
        
